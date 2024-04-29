@@ -1,8 +1,8 @@
 import { html } from 'lit';
-import '../src/components/atoms/Tag';
+import '.';
 
 export default {
-  title: 'Tag',
+  title: 'atoms/Tag',
   component: 'tag-component',
   argTypes: {
     text: { control: 'text' },

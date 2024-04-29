@@ -2,6 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./src/styles/designSystem.css">
   <style>
     body {
       background: #fafafa;
@@ -13,14 +14,14 @@
 
   <script type="module">
     import { html, render } from 'lit';
-    import '../coffee-listing.js';
+    import './src/components/atoms/Tag';
 
     const header = 'Hello owc World!';
     render(
       html`
-        <coffee-listing .header=${header}>
-          some light-dom
-        </coffee-listing>
+        <tag-component .text=${header}>
+
+        </tag-component>
       `,
       document.querySelector('#demo')
     );

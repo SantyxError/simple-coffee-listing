@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "coffee-listing",
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "module": "index.js",
   "exports": {
@@ -16,13 +16,10 @@
     "start": "web-dev-server",
     "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
     "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
-    "test": "web-test-runner --coverage",
+    "test": "web-test-runner 'src/**/*.test.js' --coverage",
     "test:watch": "web-test-runner --watch",
     "storybook": "npm run analyze -- --exclude dist && web-dev-server -c .storybook/server.mjs",
     "storybook:build": "npm run analyze -- --exclude dist && build-storybook"
-  },
-  "dependencies": {
-    "lit": "^2.0.2"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
@@ -58,5 +55,9 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
+
 }

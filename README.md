@@ -1,4 +1,76 @@
-# simple_coffee_listing
-Technical test for BBVA using web components and LIT
+# \<coffee-listing>
 
-The quality of the generated code is especially valued, things such as validations, separation of responsibilities, linters, pwa, persistence and data structure, etc... and elements such as testing and organization of the deliverable.
+This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+
+## Installation
+
+```bash
+npm i coffee-listing
+```
+
+## Usage
+
+```html
+<script type="module">
+  import 'coffee-listing/coffee-listing.js';
+</script>
+
+<coffee-listing></coffee-listing>
+```
+
+## Linting and formatting
+
+To scan the project for linting and formatting errors, run
+
+```bash
+npm run lint
+```
+
+To automatically fix linting and formatting errors, run
+
+```bash
+npm run format
+```
+
+## Testing with Web Test Runner
+
+To execute a single test run:
+
+```bash
+npm run test
+```
+
+To run the tests in interactive watch mode run:
+
+```bash
+npm run test:watch
+```
+
+## Demoing with Storybook
+
+To run a local instance of Storybook for your component, run
+
+```bash
+npm run storybook
+```
+
+To build a production version of Storybook, run
+
+```bash
+npm run storybook:build
+```
+
+
+## Tooling configs
+
+For most of the tools, the configuration is in the `package.json` to minimize the amount of files in your project.
+
+If you customize the configuration a lot, you can consider moving them to individual files.
+
+## Local Demo with `web-dev-server`
+
+```bash
+npm start
+```
+
+To run a local development server that serves the basic demo located in `demo/index.html`

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+:root {
+  /*BORDER RADIUS*/
+  --borderRadius-xs: 4px;
+  --borderRadius-s: 8px;
+  --borderRadius-m: 12px;
+  --borderRadius-l: 16px;
+  --borderRadius-xl: 24px;
+
+  /*COLOR*/
+  --color-brand01: #1b1d1f;
+  --color-brand02: #111315;
+  --color-brand03: #6f757c;
+  --color-brand04: #bee3cc;
+  --color-brand05: #fef7ee;
+  --color-brand06: #f6c768;
+  --color-brand07: #ed735d;
+
+  /*FONT SIZE*/
+  --fontSize-xxs: 0.1rem;
+  --fontSize-xs: 0.25rem;
+  --fontSize-s: 0.5rem;
+  --fontSize-m: 1rem;
+  --fontSize-l: 1.5rem;
+  --fontSize-xl: 2rem;
+  --fontSize-xxl: 3rem;
+
+  /*FONT WEIGHT*/
+  --fontWeight-300: 300;
+  --fontWeight-400: 400;
+  --fontWeight-600: 600;
+  --fontWeight-700: 700;
+
+  /*MEDIA QUERIES*/
+  --mediaQuery-mobile: @media (max-width: 48rem);
+  --mediaQuery-mobileAndTablet: @media (max-width: 64rem);
+  --mediaQuery-tablet: @media (max-width: 64rem) and (min-width: 48rem);
+  --mediaQuery-tabletAndDesktop: @media (min-width: 48rem);
+  --mediaQuery-desktop: @media (min-width: 64rem);
+
+  /*SPACINGS*/
+  --spacing-xxs: 0.1rem;
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+
+  /* TYPOGRAPHY */
+  --fontFamily-heading: "DM Sans", sans-serif;
+  --fontFamily-body: "DM Sans", sans-serif;
+  --fontFamily-label: "DM Sans", sans-serif;
+  --fontFamily-small-text: "DM Sans", sans-serif;
+  --fontFamily-price-text: "DM Sans", sans-serif;
+
+}
+
+
+

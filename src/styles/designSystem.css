@@ -18,19 +18,19 @@
   --color-brand07: #ed735d;
 
   /*FONT SIZE*/
-  --fontSize-xxs: 0.1rem;
-  --fontSize-xs: 0.25rem;
-  --fontSize-s: 0.5rem;
+  --fontSize-xxs: 0.625rem;
+  --fontSize-xs: 0.75rem;
+  --fontSize-s: 0.875rem;
   --fontSize-m: 1rem;
-  --fontSize-l: 1.5rem;
-  --fontSize-xl: 2rem;
-  --fontSize-xxl: 3rem;
+  --fontSize-l: 2rem;
 
   /*FONT WEIGHT*/
   --fontWeight-300: 300;
   --fontWeight-400: 400;
   --fontWeight-600: 600;
   --fontWeight-700: 700;
+  --fontWeight-800: 800;
+  --fontWeight-900: 900;
 
   /*MEDIA QUERIES*/
   --mediaQuery-mobile: @media (max-width: 48rem);

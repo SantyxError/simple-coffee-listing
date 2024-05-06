@@ -4,9 +4,22 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./src/styles/designSystem.css">
   <style>
-    body {
-      background: #fafafa;
-    }
+ .container {
+        position: relative;
+        height: 100vh;
+        background-color: black;
+        overflow: hidden;
+        background-image:url('src/assets/images/bg-cafe.jpg');
+        background-position-y: top;
+        background-size:100% auto;
+        background-repeat: no-repeat;
+      }
+
+      .cards {
+        position: absolute;
+        top: 175px;
+        left: 100px;
+      }
   </style>
 </head>
 <body>
@@ -14,14 +27,16 @@
 
   <script type="module">
     import { html, render } from 'lit';
-    import './src/components/atoms/Tag';
+    import './src/components/organisms/Cards';
 
     const header = 'Hello owc World!';
+    const image= 'src/assets/images/bg-cafe.jpg'
+
     render(
       html`
-        <tag-component .text=${header}>
-
-        </tag-component>
+        <section class="container">
+          <cards-component ></cards-component>
+        </section>
       `,
       document.querySelector('#demo')
     );

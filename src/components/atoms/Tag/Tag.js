@@ -4,11 +4,12 @@ export class Tag extends LitElement {
   static get styles() {
     return css`
       :host {
-        padding: var(--spacing-s) var(--spacing-l);
+        padding: var(--spacing-xs) var(--spacing-m);
         background-color: var(--color-brand06);
         font-family: var(--font-family-label);
         border: unset;
         border-radius: var(--borderRadius-xl);
+        font-size: var(--fontSize-xs);
       }
     `;
   }

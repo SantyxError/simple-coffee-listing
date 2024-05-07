@@ -4,10 +4,10 @@ export class Price extends LitElement {
   static get styles() {
     return css`
       :host {
-        padding: var(--spacing-s) var(--spacing-m);
+        padding: var(--spacing-xs) var(--spacing-s);
         background-color: var(--color-brand04);
-        font-family: var(--font-family-label);
         font-weight: var(--fontWeight-900);
+        font-size: var(--fontSize-s);
         border: unset;
         border-radius: var(--borderRadius-s);
       }

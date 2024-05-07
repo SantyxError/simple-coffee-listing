@@ -40,8 +40,20 @@ export class Text extends LitElement {
 
   static getColor() {
     return css`
+      :host([color='orange']) {
+        color: var(--color-brand07);
+      }
+
+      :host([color='yellow']) {
+        color: var(--color-brand06);
+      }
+
       :host([color='white']) {
         color: var(--color-brand05);
+      }
+
+      :host([color='aquamarine']) {
+        color: var(--color-brand04);
       }
 
       :host([color='grey']) {
@@ -50,6 +62,10 @@ export class Text extends LitElement {
 
       :host([color='black']) {
         color: var(--color-brand02);
+      }
+
+      :host([color='mateblack']) {
+        color: var(--color-brand01);
       }
     `;
   }
@@ -79,7 +95,6 @@ export class Text extends LitElement {
   }
 
   render() {
-    console.log(this.variant);
     return html` ${this.text} `;
   }
 }

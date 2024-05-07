@@ -4,26 +4,48 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./src/styles/designSystem.css">
   <style>
-    body {
-      background: #fafafa;
-    }
+      * {
+        margin:0;
+        padding: 0;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: var(--color-brand02);
+        background-image:url('src/assets/images/bg-cafe.jpg');
+        background-position-y: top;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        padding-bottom: 300px;
+        min-height: 100vh;
+      }
+
+      .cards {
+        position: absolute;
+        top: 175px;
+        left: 100px;
+      }
   </style>
 </head>
 <body>
-  <div id="demo"></div>
+  <section id="coffeList" class="container"></section>
 
   <script type="module">
     import { html, render } from 'lit';
+    import './src/components/atoms/Price';
     import './src/components/atoms/Tag';
+    import './src/components/atoms/Text';
+    import './src/components/molecules/Card';
+    import './src/components/organisms/Cards';
 
-    const header = 'Hello owc World!';
     render(
       html`
-        <tag-component .text=${header}>
-
-        </tag-component>
+        <cards-component></cards-component>
       `,
-      document.querySelector('#demo')
+      document.querySelector('#coffeList')
     );
   </script>
 </body>

@@ -71,7 +71,7 @@ export class Card extends LitElement {
 
   render() {
     if (!this.coffee) {
-      return html`<div>No hay datos de café disponibles</div>`;
+      return html`<p>No hay datos de café disponibles</p>`;
     }
 
     const starImage =

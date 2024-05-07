@@ -3,7 +3,7 @@ import { LitElement, html, css } from 'lit';
 export class Cards extends LitElement {
   static get styles() {
     return css`
-      .container {
+      .cards-container {
         position: relative;
         font-family: var(--fontFamily-heading);
         background-color: var(--color-brand01);
@@ -15,6 +15,7 @@ export class Cards extends LitElement {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: 200px;
       }
 
       .background-image {
@@ -123,7 +124,7 @@ export class Cards extends LitElement {
     const image = 'src/assets/images/vector.svg';
 
     return html`
-      <div class="container">
+      <div class="cards-container">
         <img class="background-image" src="${image}" alt="Background Image" />
         <div class="info-wrapper">
           <text-component

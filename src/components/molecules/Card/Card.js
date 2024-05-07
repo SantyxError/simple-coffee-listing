@@ -5,10 +5,10 @@ export class Card extends LitElement {
     return css`
       .card {
         position: relative;
-        border-radius: 8px;
+        border-radius: var(--borderRadius-m);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        margin: 16px;
+        margin: var(--spacing-m);
         width: 300px;
       }
 
@@ -25,14 +25,9 @@ export class Card extends LitElement {
 
       .card-container {
         display: flex;
-        padding: 16px;
+        padding: var(--spacing-m) 0;
         flex-direction: column;
         gap: var(--spacing-xs);
-      }
-
-      .card-title {
-        margin: 0;
-        font-size: 20px;
       }
 
       .card-text-valoration {

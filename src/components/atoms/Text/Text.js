@@ -64,7 +64,7 @@ export class Text extends LitElement {
         color: var(--color-brand02);
       }
 
-      :host([color='darkblack']) {
+      :host([color='mateblack']) {
         color: var(--color-brand01);
       }
     `;

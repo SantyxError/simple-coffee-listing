@@ -8,8 +8,9 @@ export class Cards extends LitElement {
         font-family: var(--fontFamily-heading);
         background-color: var(--color-brand01);
         width: 1200px;
-        padding: 20px;
-        border-radius: 10px;
+        padding: var(--spacing-l);
+        padding-bottom: var(--spacing-5xl);
+        border-radius: var(--borderRadius-m);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -20,8 +21,8 @@ export class Cards extends LitElement {
 
       .background-image {
         position: absolute;
-        right: 350px;
-        top: 30px;
+        right: 375px;
+        top: var(--spacing-xxl);
       }
 
       .info-wrapper {
@@ -38,35 +39,19 @@ export class Cards extends LitElement {
         z-index: 1;
       }
 
-      .title {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0;
-        color: var(--color-text);
-      }
-
-      .text_info {
-        font-size: 16px;
-        color: var(--color-text-secondary);
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
-
       .buttons {
         display: flex;
-        gap: 20px;
+        gap: var(--spacing-l);
       }
 
       .productButton,
       .availableButton {
-        padding: 10px 20px;
+        padding: var(--spacing-s) var(--spacing-m);
         background-color: var(--color-primary);
-        color: white;
-        border-radius: 5px;
+        color: var(--color-brand05);
+        border-radius: var(--borderRadius-s);
         cursor: pointer;
         transition: background-color 0.3s ease;
-        font-size: m;
-        font-weight: bold;
       }
 
       .productButton {
@@ -76,10 +61,6 @@ export class Cards extends LitElement {
       .productButton:hover,
       .availableButton:hover {
         background-color: var(--color-primary-dark);
-      }
-
-      cards-component {
-        flex: 1;
       }
 
       .card-list {
